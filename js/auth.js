@@ -87,7 +87,7 @@ if (loginButton) {
             // Tampilkan pesan error yang lebih mudah dipahami pengguna
             if (errorMessageDiv) {
                 switch (errorCode) {
-                    case "invalid-email":
+                    case "autinvalid-email":
                         errorMessageDiv.textContent = "Format email tidak valid.";
                         break;
                     case "user-disabled":
