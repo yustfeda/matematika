@@ -87,20 +87,20 @@ if (loginButton) {
             // Tampilkan pesan error yang lebih mudah dipahami pengguna
             if (errorMessageDiv) {
                 switch (errorCode) {
-                    case "auth/invalid-email":
+                    case "invalid-email":
                         errorMessageDiv.textContent = "Format email tidak valid.";
                         break;
-                    case "auth/user-disabled":
+                    case "user-disabled":
                         errorMessageDiv.textContent = "Akun Anda telah dinonaktifkan. Silakan hubungi administrator.";
                         break;
-                    case "auth/user-not-found":
-                    case "auth/wrong-password":
+                    case "user-not-found":
+                    case "wrong-password":
                         errorMessageDiv.textContent = "Email atau password salah. Silakan coba lagi.";
                         break;
-                    case "auth/too-many-requests":
+                    case "too-many-requests":
                         errorMessageDiv.textContent = "Terlalu banyak percobaan login yang gagal. Silakan coba lagi nanti.";
                         break;
-                    case "auth/network-request-failed":
+                    case "network-request-failed":
                         errorMessageDiv.textContent = "Tidak ada koneksi internet atau masalah jaringan. Silakan coba lagi.";
                         break;
                     default:
