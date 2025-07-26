@@ -103,7 +103,9 @@ if (loginButton) {
                     case "auth/network-request-failed":
                         errorMessageDiv.textContent = "Tidak ada koneksi internet atau masalah jaringan. Silakan coba lagi.";
                         break;
-                    
+                    default:
+                        errorMessageDiv.textContent = `Terjadi kesalahan: Email atau Password yang anda masukan salah, silahkan coba lagi.`;
+                        break;
                 }
             }
         }
